@@ -1,0 +1,536 @@
+ 
+body {
+	overflow-x: hidden; /*--right gutter fix--*/
+	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+
+/* navbar */
+	  .navbar{background-color:whitesmoke; text-transform: uppercase;}
+
+.navbar-brand img {height:5rem;}
+.nav-link img {height: 2rem;}
+#cart img{height: 3rem;}
+#navbutton{height: 1.5rem;}
+#overlay{border: slategray;
+		 position: relative;
+		 width: 100%;
+		 height: 100%;
+		opacity: 0.8;}
+
+/*center button at carousel*/		
+
+		
+.caption{width: 100%;max-width: 100%;
+	position: absolute;top: 45%;text-transform: uppercase;display: flex; justify-content: center;
+    align-items: center;
+	z-index: 2;}
+
+	.shoes-heading{text-transform: capitalize;}
+	
+			
+
+ .centerbtn {
+	position: absolute;
+	padding: .4rem .8rem;;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+	letter-spacing: 4px;
+	background-color: transparent;
+	text-align: center;
+	}				
+		    
+	a.btn.centerbtn:hover{ background-color: white;
+        color: #050801;
+        box-shadow: 0 0 10PX white,
+                    0 0 25PX white,
+                    0 0 50PX white,
+					0 0 200PX white;}
+
+					a.btn.centerbtn span{position: absolute; display: block;}
+					a.btn.centerbtn	span:nth-child(1)   {top: 0;
+										   left: -100%;
+										   height: 2px;
+										  width: 100%;
+										  background: linear-gradient(90deg,transparent,white);
+										  animation: animate1 1s linear infinite;
+											;}          
+										  
+						  @keyframes animate1{
+											   0%{left: -100%;}
+											   50%,100%{left: 100%;}
+																	 }
+				  
+				  
+						  a.btn.centerbtn span:nth-child(2)   {top: -100%;
+												right: 0;
+												height: 100%;
+												width: 2px;
+												background: linear-gradient(180deg,transparent,white);
+												animation: animate2 1s linear infinite;animation-delay: 0.25s}          
+																	 
+						  @keyframes animate2{
+											  0%{top: -100%;}
+											  50%,100%{top: 100%;}
+																  }
+																							   
+						 a.btn.centerbtn span:nth-child(3)   {bottom: 0;
+											   right: -100%;
+											   height: 2px;
+											   width: 100%;
+											   background: linear-gradient(270deg,transparent,white);
+											   animation: animate3 1s linear infinite;animation-delay: 0.55s}          
+																								 
+						  @keyframes animate3{
+											   0%{right: -100%;}
+											  50%,100%{right: 100%;} }
+				  
+				  
+						   a.btn.centerbtn span:nth-child(4)   {bottom: -100%;
+												  left: 0;
+												  height: 100%;
+												 width: 2px;
+												 background: linear-gradient(360deg,transparent,white);
+												 animation: animate4 1s linear infinite;animation-delay: 0.75s}          
+												 
+						  @keyframes animate4{
+											   0%{bottom: -100%;}
+											  50%,100%{bottom: 100%;}
+																  }
+																		   
+																														   
+																																																				 
+					
+
+/* body */
+
+h3.heading{  text-transform: uppercase;}
+	
+img.icon{max-width: 100%;height: 3rem;}				   
+.jumbotron{background-color:whitesmoke}
+.icon{padding-bottom: 1rem;}
+
+
+
+
+
+ /* hover effect for navbar*/
+.navhover:hover {transform: scale(1.5); transition: 0.3s ease-out;}
+
+.N2:hover .N3{transform: scale(1.4); transition: 0.3s; z-index: 5;font-size: 0.8rem;}
+.N1:hover > .N2:not(:hover) .N3{filter: blur() saturate(0) brightness(1) contrast(2);} 
+
+
+  /* hover effect for our designers section*/
+	.CON:hover .CD{transform: translateY(15px) ;transition:0.3s;}
+	.MC:hover > .CON:not(:hover) .CD{filter: saturate(0) brightness() blur(3px) contrast();}
+
+
+				
+
+/* footer */
+
+.footer {margin-top: 2rem; color: white;padding: 2rem;padding-bottom: 0rem;
+         background-color: black;}
+.footer img{height: 3rem;}
+
+#social1,#social2,#social3,#social4{ height: 1.5rem;
+									 margin-bottom: 4rem;
+									 color: white;
+                                    }
+.list-unstyled a {text-decoration: none;color:  rgb(211, 211, 211)}
+.list-unstyled strong{text-transform: uppercase;}
+.list-unstyled a:hover{color: whitesmoke;}
+hr{ background-color:  rgb(211, 211, 211);margin-top: 3rem;}
+#location{height: 1.5rem;}
+#center{height: auto;}
+
+/* hover design for social media */
+#social1:hover{background-color: #ffaf00; border-radius: 20%;
+	color: #ffaf00;
+	box-shadow: 0 0 10PX #bb02ff,
+				0 0 25PX #bb02ff,
+				0 0 50PX #bb02ff,
+				0 0 200PX  #bb02ff;
+			transform: scale(1.5);
+			transition: 0.5s;}
+			
+#social2:hover{background-color:  #03e9f4 ; border-radius: 20%;
+				color: white;
+				box-shadow: 0 0 10PX #03e9f4 ,
+							0 0 25PX #03e9f4 ,
+							0 0 50PX #03e9f4 ,
+							0 0 200PX #03e9f4 ;
+						transform: scale(1.5);
+						transition: 0.5s}	
+								
+#social3:hover{background-color:  #2e16b4; border-radius: 20%;
+				color: white;
+				box-shadow: 0 0 10PX #2e16b4 ,
+							0 0 25PX #2e16b4 ,
+							0 0 50PX #2e16b4 ,
+							0 0 200PX #2e16b4 ;
+							transform: scale(1.5);
+						    transition: 0.5s}	
+							
+#social4:hover{background-color:  #ff073a; border-radius: 20%;
+				color: white;
+				box-shadow: 0 0 10PX #ff073a,
+							0 0 25PX #ff073a,
+							0 0 50PX #ff073a,
+							0 0 200PX #ff073a;
+							transform: scale(1.5);
+						    transition: 0.5s}	
+																															
+
+/* bouncing animation for heading*/ 
+#animation{
+		   -webkit-font-smoothing:antialiased;
+		   display: -webkit-box;
+		   display: flex;
+		   justify-content: center;
+		   -webkit-box-align: center;
+		   -webkit-box-pack: center;
+		    padding-bottom: 1.5rem;}
+
+#animation span{
+				position: relative;
+				-webkit-animation: bounce .5s ease infinite alternate;
+				animation: bounce .5s infinite alternate;
+				
+
+							}
+
+#animation span:nth-child(2){-webkit-animation-delay: .1s; animation-delay: .1s;}		
+#animation span:nth-child(3){-webkit-animation-delay: .2s; animation-delay: .2s;}	
+#animation span:nth-child(4){-webkit-animation-delay: .3s; animation-delay: .3s;}	
+#animation span:nth-child(5){-webkit-animation-delay: .4s; animation-delay: .4s;}	
+#animation span:nth-child(6){-webkit-animation-delay: .5s; animation-delay: .5s;}	
+#animation span:nth-child(7){-webkit-animation-delay: .6s; animation-delay: .6s;}	
+#animation span:nth-child(8){-webkit-animation-delay: .7s; animation-delay: .7s;}	
+#animation span:nth-child(9){-webkit-animation-delay: .8s; animation-delay: .8s;}	
+#animation span:nth-child(10){-webkit-animation-delay: .9s; animation-delay: .9s;}		
+#animation span:nth-child(11){-webkit-animation-delay: .10s; animation-delay: .10s;}	
+#animation span:nth-child(12){-webkit-animation-delay: .11s; animation-delay: .11s;}	
+#animation span:nth-child(13){-webkit-animation-delay: .12s; animation-delay: .12s;}	
+#animation span:nth-child(14){-webkit-animation-delay: .13s; animation-delay: .13s;}					
+
+@-webkit-keyframes bounce{100% {top: 20px;}}
+@keyframes bounce{100%{top: 20px;}}
+
+
+
+.team-member-text {font-size: 16px;
+					text-transform: capitalize;
+					line-height: 20px;
+					padding: 0.5rem;}
+.team-member-text p{margin-bottom: 0.4rem;
+					font-weight: bolder;}					
+					
+.team-member{padding-left: 5px;
+			padding-right: 5px;
+			 transition: 0.3s ease-out;
+			 margin-top: 10px;
+			 }
+
+
+ .team-member:hover{transform: translateY(15px);
+				opacity: 1;} 		
+
+
+.team-member:before{
+				background: linear-gradient(to top,color,transparent);
+				z-index: 10;
+				transition: 0.5s;
+				opacity: 1;}
+
+.team-member:hover:before{opacity: 1;} 				
+
+
+.team-member .team-member-text{position: absolute;
+					left: 5%;
+					top: 75%;
+					z-index: 6;
+				   color: #fff;
+				  opacity:0;
+				  transform: translateY(70px);
+				  transition: 0.5s;} 
+
+.team-member:hover .team-member-text{opacity: 1;
+						   transform: translateY(0);
+						  color: black;} 
+
+
+
+.team-member-text a:hover{text-decoration: none;
+         color: #050801;           }
+ 
+.team-member-text a{text-decoration: none;
+   color: black;}
+
+
+
+/* pagination*/ 
+
+a.page-link{color: black;}
+.pagination{padding: 3rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+	
+/*styling for each shoe page*/
+
+
+#shoe-slider{height:70%;
+	width: 80%;
+	left: 10%;
+	position: relative;
+	display: flex;
+	align-items: center;
+  justify-content: center;}
+  
+  
+	span.carousel-control-next-icon{background-color: gray;}
+	span.carousel-control-prev-icon{background-color: gray;}
+  li.indicator{background-color:black;}
+  
+  #shoe-size{border: black solid 0.2px;
+            padding: 3px;
+           border-radius: 4px;
+          padding: 5px;}
+
+  #shoe-size-pack{position: relative;
+                  top: 10%;
+                  left: 20%;
+                 width: 60%;
+                 margin: 5px;}      
+                 
+                 
+ button#shoe-size.col.btn-dark {margin-bottom: 4px;
+                                margin-right: 6px;
+                               background-color: black;}    
+  
+ 
+button#shoe-size.col.btn-light {margin-bottom: 4px;
+                                margin-right: 6px;
+                                  color: black;
+                                background-color: white }    
+  
+button#shoe-size.col.btn-dark:hover{background-color:white;
+                                    color:black;
+                                    transition: ease-in-out 0.4s;} 
+ 
+ button#shoe-size.col.btn-light:hover{background-color:black;
+                                      color: white;
+                                     transition: ease-in-out 0.4s;}      
+                                      
+                                      
+
+ 
+     
+                   
+  .shoe-text{margin-top: 8rem;
+    top: 10%;
+    left: 50%;
+   width: 60%;}                 
+                 
+   .shoe-text ul{padding-left: 1rem;}     
+   
+   
+   .delivery-button{
+    border-radius: 1rem;
+    position: relative; 
+    color: white;
+    background-color: black;
+    outline-color: black;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 1)! important;} 
+
+    .delivery-button:hover{color: white;
+                           outline-color: black;}
+
+       .shippingAndReview-card-header{padding: 0rem;
+                                      margin: 0rem;
+                                     background-color: white;
+                                     border-radius: 0rem;
+                                     border: 0rem;}
+  
+      .shippingAndReview-card{border-radius: 1rem;
+                              border: 1px solid;}
+
+      .arrow{height: 1rem;}
+
+
+
+      
+/*cart button*/		
+
+		
+.caption2{width: 100%;
+  max-width: 100%;
+  position: relative;
+  top:45%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	z-index: 2;}
+
+	.shoes-heading{text-transform: capitalize;}
+	
+			
+
+ .cart-button {
+  position: absolute;
+  top: 2rem;
+	padding: .4rem .8rem;;
+    color:black;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+	letter-spacing: 4px;
+	background-color: transparent;
+	text-align: center;
+  }	
+  
+   .cart-button-img{height: 3rem;}
+   .li-img{height: 3rem;}
+		    
+	div.btn.cart-button:hover{ background-color: black;
+        color: white;
+        box-shadow: 0 0 10PX aqua,
+                    0 0 25PX aqua,
+                    0 0 50PX aqua,
+					0 0 200PX aqua;
+		border: 2px solid aqua;		}
+
+					div.btn.cart-button span{position: absolute; display: block;}
+					div.btn.cart-button	span:nth-child(1)   {top: 0;
+										   left: -100%;
+										   height: 2px;
+										  width: 100%;
+										  background: linear-gradient(90deg,transparent,black);
+										  animation: animate1 1s linear infinite;
+											;}          
+										  
+						  @keyframes animate1{
+											   0%{left: -100%;}
+											   50%,100%{left: 100%;}
+																	 }
+				  
+				  
+						  div.btn.cart-button span:nth-child(2)   {top: -100%;
+												right: 0;
+												height: 100%;
+												width: 2px;
+												background: linear-gradient(180deg,transparent,black);
+												animation: animate2 1s linear infinite;animation-delay: 0.25s}          
+																	 
+						  @keyframes animate2{
+											  0%{top: -100%;}
+											  50%,100%{top: 100%;}
+																  }
+																							   
+						 div.btn.cart-button span:nth-child(3)   {bottom: 0;
+											   right: -100%;
+											   height: 2px;
+											   width: 100%;
+											   background: linear-gradient(270deg,transparent,black);
+											   animation: animate3 1s linear infinite;animation-delay: 0.55s}          
+																								 
+						  @keyframes animate3{
+											   0%{right: -100%;}
+											  50%,100%{right: 100%;} }
+				  
+				  
+						   div.btn.cart-button span:nth-child(4)   {bottom: -100%;
+												  left: 0;
+												  height: 100%;
+												 width: 2px;
+												 background: linear-gradient(360deg,transparent,black);
+												 animation: animate4 1s linear infinite;animation-delay: 0.75s}          
+												 
+						  @keyframes animate4{
+											   0%{bottom: -100%;}
+											  50%,100%{bottom: 100%;}
+																  }
+      
+
+      
+                                     
+
+/* styling for review page*/ 
+  
+.reviewNav{background-color:black;
+	height: 6rem;
+	color: white;}
+
+
+	img.reviewLogo{height: 4rem;  transition-delay:5s;}
+
+	.Review-header{padding-top: 1rem;}
+	.now{font-weight: 100;
+	   font-size: 2.5rem;}
+
+ img.star{height: 12rem}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media querries*/ 
+@media(max-width:760px){.navbr{display:none;}}
+@media(max-width:760px){.navhover:hover {transform: scale(0.8); transition: 0.3s;}
+
+.N2:hover .N3{transform: scale(0.8); transition: 0.3s; z-index: 5;font-size: 0.8rem;}
+.N1:hover > .N2:not(:hover) .N3{filter: blur() saturate(0) brightness(1) contrast(2);} } 
+
+
+
+/* media querry for shoes text font-sizes*/
+@media(max-width:450px){.team-member-text {font-size: 12px;}}
+@media(min-width:1440px){.team-member-text {font-size: 20px;}}
+@media(min-width:2560px){.team-member-text {font-size: 40px;} .team-member-text p{margin-bottom: 2rem;font-weight: bolder;}}
+@media(max-width:600px){.team-member .team-member-text{position: absolute;
+	                                                   left: 5%;
+	                                                   top: 60%;
+	                                                   z-index: 6;
+                                                       color: #fff;
+                                                       opacity:0;
+                                                       transform: translateY(70px);
+                                                       transition: 0.5s;} 
+
+
+
+
+
+
+
+
+
